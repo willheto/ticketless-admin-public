@@ -1,0 +1,62 @@
+{
+	"compilerOptions": {
+		"outDir": "./dist",
+		"module": "esnext",
+		"target": "es6",
+		"lib": ["es6", "dom"],
+		"sourceMap": true,
+		"allowJs": true,
+		"jsx": "react",
+		"moduleResolution": "node",
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noImplicitAny": false,
+		"strictNullChecks": true,
+		"baseUrl": "./",
+		"rootDir": "./",
+		"typeRoots": ["./node_modules/@types", "./src/@types"],
+		"paths": {
+			"@src/*": ["src/*"],
+			"@images/*": ["src/images/*"],
+			"@styles/*": ["src/styles/*"],
+			"@components/*": ["src/components/*"],
+			"@views/*": ["src/views/*"],
+			"@utils/*": ["src/utils/*"],
+			"~@types/*": ["src/@types/*"],
+			"~actions/*": ["src/actions/*"],
+			"~api/*": ["src/api/*"],
+			"~assets/*": ["src/assets/*"],
+			"~components/*": ["src/components/*"],
+			"~constants/*": ["src/constants/*"],
+			"~context/*": ["src/context/*"],
+			"~countries/*": ["src/countries/*"],
+			"~heapdump/*": ["src/heapdump/*"],
+			"~hooks/*": ["src/hooks/*"],
+			"~reducers/*": ["src/reducers/*"],
+			"~sagas/*": ["src/sagas/*"],
+			"~tests/*": ["src/tests/*"],
+			"~translations/*": ["src/translations/*"],
+			"~utils/*": ["src/utils/*"],
+			"~views/*": ["src/views/*"],
+			"~/*": ["src/*"]
+		},
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"incremental": true,
+		"resolveJsonModule": true,
+		"plugins": [
+			{
+				// the package name here
+				"transform": "typescript-styled-components-plugin"
+				// other options follow
+			}
+		]
+	},
+	"include": ["src"],
+	"exclude": [
+		"**/node_modules",
+		"**/*.test.*",
+		"src/**/*.spec.ts",
+		"src/**/*.test.ts"
+	]
+}

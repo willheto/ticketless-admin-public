@@ -1,0 +1,11 @@
+node_modules
+dist
+.eslintrc.js
+service-worker.js
+jest.config.ts
+globals.js
+*.test.ts
+*.test.tsx
+*.scss
+src/api/*
+

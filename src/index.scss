@@ -1,0 +1,160 @@
+@import 'bootstrap/scss/bootstrap';
+@import 'react-datepicker/dist/react-datepicker.css';
+
+#root {
+	height: -webkit-fill-available;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+html {
+	height: 100%;
+	overscroll-behavior: none;
+	height: -webkit-fill-available;
+	background-color: #fff;
+	font-family: 'Euclid Circular A', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.btn-pink {
+	--bs-btn-font-weight: 600;
+	--bs-btn-font-size: 16px;
+	--bs-btn-color: var(--bs-white);
+	--bs-btn-bg: #f24594;
+	--bs-btn-border-color: #f24594;
+	--bs-btn-border-radius: 0.25rem;
+	--bs-btn-hover-color: var(--bs-white) !important;
+	--bs-btn-hover-bg: #{shade-color(#f24594, 10%)} !important;
+	--bs-btn-hover-border-color: #{shade-color(#f24594, 10%)} !important;
+	--bs-btn-focus-shadow-rgb: #f24594;
+	--bs-btn-active-color: #f24594;
+	--bs-btn-active-bg: #{shade-color(#f24594, 20%)};
+	--bs-btn-active-border-color: #{shade-color(#f24594, 20%)};
+	--bs-btn-disabled-color: #f24594;
+	--bs-btn-disabled-bg: #{shade-color(#f24594, 20%)};
+	--bs-btn-disabled-border-color: #{shade-color(#f24594, 20%)};
+	max-width: 400px;
+}
+
+#event-calendar {
+	font-size: 14px;
+
+	@media screen and (max-width: 768px) {
+		font-size: 12px;
+	}
+
+	@media screen and (max-width: 576px) {
+		font-size: 10px;
+	}
+}
+
+.fc-button {
+	background-color: #f24594 !important;
+	border-color: #f24594 !important;
+	color: #fff;
+}
+
+.fc-daygrid-event-dot {
+	display: none !important;
+}
+
+.fc-event-title {
+	padding-left: 5px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.fc-daygrid-event {
+	background-color: #f24594 !important;
+	border-color: #f24594 !important;
+	color: #fff;
+}
+
+.modal-content {
+	border-radius: 0.25rem;
+}
+
+.btn {
+	--bs-btn-border-radius: 0.25rem;
+}
+
+.fade-in {
+	opacity: 0;
+	transition: all 0.2s;
+	transform: translateY(-10px);
+}
+
+.fade-over {
+	opacity: 1 !important;
+	transform: translateY(0px) !important;
+	transition: all 0.2s !important;
+}
+
+a {
+	font-family: 'Euclid Circular A', sans-serif;
+
+	color: #f24594;
+}
+
+h1 {
+	font-family: 'Euclid Circular A', sans-serif;
+
+	font-size: 2em;
+}
+
+h2 {
+	font-family: 'Euclid Circular A', sans-serif;
+
+	font-size: 1.5em;
+}
+
+h3 {
+	font-family: 'Euclid Circular A', sans-serif;
+
+	font-size: 1.17em;
+}
+
+h4 {
+	font-family: 'Euclid Circular A', sans-serif;
+
+	font-size: 1em;
+}
+
+.form-check-input:checked {
+	background-color: #f24594;
+	border-color: #f24594;
+}
+
+.form-label {
+	font-weight: 600 !important;
+	margin-bottom: 0px;
+}
+
+.tab-content {
+	height: -webkit-fill-available;
+	overflow: auto;
+}
+
+.required .form-label:after {
+	content: ' *';
+	color: red;
+}
+
+.rounded-pill:focus {
+	box-shadow: none;
+	outline: none;
+}
+
+.pink-bg {
+	background-color: #f24594;
+}
+
+.Toastify__toast-icon {
+	display: none;
+}
